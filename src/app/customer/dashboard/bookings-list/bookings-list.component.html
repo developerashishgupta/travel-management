@@ -1,0 +1,14 @@
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th> Actions </th>
+    </tr>
+  </thead>
+  <tbody>
+    <app-bookings-list-item *ngFor="let booking of bookings" (delete)="delete($event)" [booking]="booking">
+      </app-bookings-list-item>
+  </tbody>
+</table>

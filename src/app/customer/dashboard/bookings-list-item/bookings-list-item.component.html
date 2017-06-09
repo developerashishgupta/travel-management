@@ -1,0 +1,10 @@
+ <tr>
+            <td>{{booking.customer.name}}</td>
+            <td>{{booking.customer.type}}</td>
+            <td>{{booking.customer.desc}}</td>
+            <td>{{booking.customer.chargePerKM}}  {{booking.customer.dstncTrvld}}</td>
+            <td> <a class="waves-effect waves-light btn" [routerLink]="['/view',booking.id]"> Details </a>
+            <a class="waves-effect waves-light btn" (click)="onDeletePress(booking)">Delete</a>
+            <a class="waves-effect waves-light btn" [routerLink]="['/update',booking.id]">Update</a>
+            </td>
+          </tr>
